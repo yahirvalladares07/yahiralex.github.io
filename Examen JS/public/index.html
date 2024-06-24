@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo de Eventos</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+         crossorigin=""/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="map-container" id="map"></div>
+        <div class="search-container">
+            <img src="../imagen/apple.jpg" alt="Logo" class="search-logo">
+            <input type="text" id="searchInput" placeholder="Buscar eventos por nombre o tipo">
+            <button id="searchButton">Buscar</button>
+
+            <div class="dropdown-container">
+                <button class="dropdown-btn">Filtrar por tipo</button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="#" data-type="Concierto">Concierto</a>
+                    <a href="#" data-type="Festival">Conferencia</a>
+                    <a href="#" data-type="Conferencia">Exposición</a>
+                    <a href="#" data-type="Deporte">Festival</a>
+                    <a href="#" data-type="Cultural">Deporte</a>
+                    <a href="#" data-type="Feria">Feria</a>
+                    <a href="#" data-type="Taller">Taller</a>
+                    <a href="#" data-type="Seminario">Seminario</a>
+                    <a href="#" data-type="Concurso">Concurso</a>
+                </div>
+            </div>
+            <div id="event-list"></div>
+        </div>
+        <div id="event-details" class="event-details"></div>
+    </div>
+    
+
+    <div class="additional-features">
+        <div class="filters">
+            <!-- Aquí van los filtros avanzados -->
+            <h2>Configuracion Avanzadas</h2>
+            <!-- Por ejemplo, un filtro por fecha -->
+            <label for="dateFilter">Obtener Fecha:</label>
+            <input type="date" id="dateFilter">
+            
+            <!-- Aquí podrías agregar más filtros según tus necesidades -->
+        </div>
+    
+        <div class="event-details">
+            <!-- Aquí van los detalles adicionales -->
+            <h2>Conseguir entrada y detalles:</h2>
+            <div id="additional-details">
+                <!-- Esta sección se llenará dinámicamente con JavaScript -->
+            </div>
+        </div>
+    
+        <div class="calendar">
+            <!-- Aquí va el calendario de eventos -->
+            <h2>Calendario de Eventos</h2>
+            <div id="event-calendar">
+                <div class="event-cards">
+                    <!-- Card 1 -->
+                    <div class="event-card">
+                        <div class="card-content" class="evento1">
+                            <h3>Concierto de Verano</h3>
+                            <img src="../imagen/evento1.webp" alt="" width="140px">
+                            <p><strong>Fecha:</strong> 2024-07-15</p>
+                            <p><strong>Hora:</strong> 19:00</p>
+                            <p><strong>Descripción:</strong> Disfruta de una noche llena de música y diversión.</p>
+                            <p><strong>Tipo:</strong> Concierto</p>
+                           <button class="btn-saber-mas">Saber más</button>
+                        </div>
+                    </div>
+            
+                    <!-- Card 2 -->
+                    <div class="event-card">
+                        <div class="card-content">
+                            <h3>Feria del Libro</h3>
+                            <img src="../imagen/evento2.jpg" alt="" width="150px">
+                            <p><strong>Fecha:</strong> 2024-08-05</p>
+                            <p><strong>Hora:</strong> 10:00</p>
+                            <p><strong>Descripción:</strong> Evento cultural para amantes de la lectura.</p>
+                            <p><strong>Tipo:</strong> Feria</p>
+                            <button class="btn-saber-mas">Saber más</button>
+                        </div>
+                    </div>
+            
+                    <!-- Card 3 -->
+                    <div class="event-card">
+                        <div class="card-content">
+                            <h3>Taller de Fotografía</h3>
+                            <img src="../imagen/evento3.jpg" alt="" width="140px">
+                            <p><strong>Fecha:</strong> 2024-07-20</p>
+                            <p><strong>Hora:</strong> 14:00</p>
+                            <p><strong>Descripción:</strong> Aprende técnicas avanzadas de fotografía con profesionales.</p>
+                            <p><strong>Tipo:</strong> Taller</p>
+                            <button class="btn-saber-mas">Saber más</button>
+                        </div>
+                    </div>
+            
+                    <!-- Card 4 -->
+                    <div class="event-card">
+                        <div class="card-content">
+                            <h3>Exposición de Arte Moderno</h3>
+                            <img src="../imagen/evento4.jpg" alt="" width="140px">
+                            <p><strong>Fecha:</strong> 2024-07-25</p>
+                            <p><strong>Hora:</strong> 11:00</p>
+                            <p><strong>Descripción:</strong> Descubre las últimas tendencias en el arte contemporáneo.</p>
+                            <p><strong>Tipo:</strong> Exposición</p>
+                            <button class="btn-saber-mas">Saber más</button>
+                        </div>
+                    </div>
+            
+                    <!-- Card 5 -->
+                    <div class="event-card">
+                        <div class="card-content">
+                            <h3>Carrera Solidaria</h3>
+                            <img src="../imagen/evento5.jpg" alt="" width="140px">
+                            <p><strong>Fecha:</strong> 2024-08-10</p>
+                            <p><strong>Hora:</strong> 08:30</p>
+                            <p><strong>Descripción:</strong> Participa y apoya una causa benéfica corriendo por la comunidad.</p>
+                            <p><strong>Tipo:</strong> Deporte</p>
+                            <button class="btn-saber-mas">Saber más</button>
+                        </div>
+                    </div>
+            
+                    <!-- Card 6 -->
+                    <div class="event-card">
+                        <div class="card-content">
+                            <h3>Conferencia de Innovación</h3>
+                            <img src="../imagen/evento6.jpg" alt="" width="140px">
+                            <p><strong>Fecha:</strong> 2024-08-15</p>
+                            <p><strong>Hora:</strong> 15:30</p>
+                            <p><strong>Descripción:</strong> Explora ideas disruptivas que están transformando industrias.</p>
+                            <p><strong>Tipo:</strong> Conferencia</p>
+                            <button class="btn-saber-mas">Saber más</button>
+                        </div>
+                    </div>
+            
+                    <!-- Card 7 -->
+                    <div class="event-card">
+                        <div class="card-content">
+                            <h3>Festival de Cine</h3>
+                            <img src="../imagen/evento7.jfif" alt="" width="140px">
+                            <p><strong>Fecha:</strong> 2024-09-01</p>
+                            <p><strong>Hora:</strong> 18:00</p>
+                            <p><strong>Descripción:</strong> Disfruta de las mejores películas independientes y clásicos restaurados.</p>
+                            <p><strong>Tipo:</strong> Festival</p>
+                            <button class="btn-saber-mas">Saber más</button>
+                        </div>
+                    </div>
+            
+                    <!-- Card 8 -->
+                    <div class="event-card">
+                        <div class="card-content">
+                            <h3>Seminario de Marketing Digital</h3>
+                            <img src="../imagen/eveneto8.jpg" alt="" width="140px">
+                            <p><strong>Fecha:</strong> 2024-07-30</p>
+                            <p><strong>Hora:</strong> 09:00</p>
+                            <p><strong>Descripción:</strong> Aprende estrategias efectivas para mejorar la presencia online de tu negocio.</p>
+                            <p><strong>Tipo:</strong> Seminario</p>
+                            <button class="btn-saber-mas">Saber más</button>
+                        </div>
+                    </div>
+            
+                    <!-- Card 9 -->
+                    <div class="event-card">
+                        <div class="card-content">
+                            <h3>Concurso de Arte Infantil</h3>
+                            <img src="../imagen/evento8.jpg" alt="" width="140px">
+                            <p><strong>Fecha:</strong> 2024-08-20</p>
+                            <p><strong>Hora:</strong> 13:00</p>
+                            <p><strong>Descripción:</strong> Celebra la creatividad de los más jóvenes en este concurso de arte.</p>
+                            <p><strong>Tipo:</strong> Concurso</p>
+                            <button class="btn-saber-mas">Saber más</button>
+                        </div>
+                    </div>
+            
+                    <!-- Card 10 -->
+                    <div class="event-card">
+                        <div class="card-content">
+                            <h3>Presentación de Ballet Clásico</h3>
+                            <img src="../imagen/evento9.jpg" alt="" width="140px">
+                            <p><strong>Fecha:</strong> 2024-09-05</p>
+                            <p><strong>Hora:</strong> 20:00</p>
+                            <p><strong>Descripción:</strong> Disfruta de una noche de gracia y belleza con las mejores bailarinas.</p>
+                            <p><strong>Tipo:</strong> Cultural</p>
+                            <button class="btn-saber-mas">Saber más</button>
+                        </div>
+                    </div>
+                </div>
+            
+             <!-- Modal para detalles adicionales -->
+             <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="modal-description"></p>
+                    <div class="modal-buttons">
+                        <button class="btn-agregar-calendario-modal">Añadir al calendario</button>
+                        <button class="btn-compartir-modal">Compartir</button>
+                        <button class="btn-comprar-entradas-modal">Comprar entradas</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        <!-- Puedes agregar más secciones según lo que desees implementar -->
+    </div>
+
+    
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script src="scripts.js" defer></script>
+</body>
+</html>

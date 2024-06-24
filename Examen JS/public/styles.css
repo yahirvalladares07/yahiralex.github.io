@@ -1,0 +1,303 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Fuente base */
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  background-color: #f0f0f0; /* Color de fondo o gradiente */
+  padding: 20px;
+  margin: 0 auto; /* Centrar el contenido horizontalmente */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+.map-container {
+  width: 100%;
+  height: 610px;
+  border-radius: 10px;
+  overflow: hidden; /* Evitar que el mapa sobresalga de sus límites */
+  background-color: #fff;
+}
+
+.search-container {
+  width: 26%;
+  padding: 20px;
+  margin-top: 2px;
+  border: 2px solid rgb(3, 75, 134); /* Borde sólido negro alrededor del contenedor de búsqueda */
+  box-shadow: 0 0 5px rgba(1, 71, 175, 0.5); /* Sombra para resaltar el borde */
+  height: calc(100% - 75px); /* Ajustar altura para que ocupe el espacio restante */
+  display: flex;
+  flex-direction: column; /* Mostrar los elementos en columna */
+  justify-content: flex-start; /* Alinear contenido al principio */
+  overflow-y: auto;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+#searchButton {
+  width: 80px;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.dropdown-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 150px; /* Ancho del botón */
+  text-align: left;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #7fb0e9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.event-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.event-item:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.event-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.search-logo {
+  width: 120px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-right: 10px; /* Espacio entre el logo y la barra de búsqueda */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  /* Estilos adicionales */
+  border: 2px solid #ccc;
+  border-radius: 50%; /* Para un borde redondeado si es necesario */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.additional-features {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.additional-features h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+
+
+/* Estilo para la sección de filtros */
+.filters {
+  margin-bottom: 20px;
+}
+
+/* Estilo para la sección de detalles adicionales */
+.event-details {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Estilo para el calendario de eventos */
+.calendar {
+  margin-bottom: 20px;
+}
+
+#event-calendar {
+  /* Estilos específicos para el calendario, puedes personalizar según el diseño que prefieras */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilo para los detalles adicionales dinámicos */
+#additional-details {
+  margin-top: 10px;
+}
+
+/* Estilo para los botones y dropdown */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown-container:hover .dropdown-content {display: block;}
+
+
+.event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  justify-content: center;
+}
+
+.event-cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan cuando no haya suficiente espacio */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 200px); /* Ajusta el ancho según el espacio y el margen */
+  margin-bottom: 20px; /* Espacio opcional entre las filas de tarjetas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.card-content p {
+  margin-bottom: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+

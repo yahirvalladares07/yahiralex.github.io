@@ -1,0 +1,366 @@
+[
+  {
+    "title": "Concierto de Rock",
+    "description": "Un concierto de rock en el parque central",
+    "date": "2024-07-10",
+    "time": "19:00",
+    "location": { "lat": 51.505, "lng": -0.09 },
+    "type": "Concierto",
+    "image": "images/concierto.jpg"
+  },
+  {
+    "title": "Conferencia de Tecnología",
+    "description": "Conferencia sobre las últimas innovaciones tecnológicas",
+    "date": "2024-08-15",
+    "time": "10:00",
+    "location": { "lat": 51.508, "lng": -0.11 },
+    "type": "Conferencia"
+  },
+  {
+    "title": "Exposición de Arte",
+    "description": "Exposición de arte moderno",
+    "date": "2024-07-20",
+    "time": "12:00",
+    "location": { "lat": 51.507, "lng": -0.10 },
+    "type": "Exposición"
+  },
+  {
+    "title": "Festival de Cine",
+    "description": "Festival de cine internacional",
+    "date": "2024-09-01",
+    "time": "18:00",
+    "location": { "lat": 51.506, "lng": -0.08 },
+    "type": "Festival"
+  },
+  {
+    "title": "Maratón",
+    "description": "Maratón anual de la ciudad",
+    "date": "2024-10-05",
+    "time": "08:00",
+    "location": { "lat": 51.509, "lng": -0.12 },
+    "type": "Deporte"
+  },
+  {
+    "title": "Feria del Libro",
+    "description": "Feria del libro con autores invitados",
+    "date": "2024-07-25",
+    "time": "10:00",
+    "location": { "lat": 51.504, "lng": -0.11 },
+    "type": "Feria"
+  },
+  {
+    "title": "Concierto de Jazz",
+    "description": "Concierto de jazz al aire libre",
+    "date": "2024-08-30",
+    "time": "20:00",
+    "location": { "lat": 51.503, "lng": -0.09 },
+    "type": "Concierto"
+  },
+  {
+    "title": "Taller de Fotografía",
+    "description": "Taller de fotografía para principiantes",
+    "date": "2024-09-15",
+    "time": "14:00",
+    "location": { "lat": 51.502, "lng": -0.08 },
+    "type": "Taller"
+  },
+  {
+    "title": "Seminario de Marketing",
+    "description": "Seminario sobre estrategias de marketing digital",
+    "date": "2024-07-18",
+    "time": "09:00",
+    "location": { "lat": 51.501, "lng": -0.10 },
+    "type": "Seminario"
+  },
+  {
+    "title": "Festival de Comida",
+    "description": "Festival con comida de todo el mundo",
+    "date": "2024-08-22",
+    "time": "11:00",
+    "location": { "lat": 51.500, "lng": -0.11 },
+    "type": "Festival"
+  },
+  {
+    "title": "Obra de Teatro",
+    "description": "Representación teatral en el centro cultural",
+    "date": "2024-09-10",
+    "time": "19:30",
+    "location": { "lat": 51.499, "lng": -0.09 },
+    "type": "Teatro"
+  },
+  {
+    "title": "Clase de Yoga",
+    "description": "Clase de yoga al aire libre",
+    "date": "2024-07-22",
+    "time": "08:30",
+    "location": { "lat": 51.498, "lng": -0.08 },
+    "type": "Clase"
+  },
+  {
+    "title": "Concierto de Música Clásica",
+    "description": "Concierto de música clásica en la catedral",
+    "date": "2024-08-05",
+    "time": "17:00",
+    "location": { "lat": 51.497, "lng": -0.10 },
+    "type": "Concierto"
+  },
+  {
+    "title": "Carrera de Bicicletas",
+    "description": "Carrera de bicicletas por la ciudad",
+    "date": "2024-09-20",
+    "time": "09:00",
+    "location": { "lat": 51.496, "lng": -0.11 },
+    "type": "Deporte"
+  },
+  {
+    "title": "Exposición de Fotografía",
+    "description": "Exposición de fotografías de naturaleza",
+    "date": "2024-08-18",
+    "time": "13:00",
+    "location": { "lat": 51.495, "lng": -0.09 },
+    "type": "Exposición"
+  },
+  {
+    "title": "Festival de Música Electrónica",
+    "description": "Festival con los mejores DJ's del mundo",
+    "date": "2024-07-28",
+    "time": "22:00",
+    "location": { "lat": 51.494, "lng": -0.10 },
+    "type": "Festival"
+  },
+  {
+    "title": "Concurso de Fotografía",
+    "description": "Concurso de fotografía urbana",
+    "date": "2024-08-12",
+    "time": "15:00",
+    "location": { "lat": 51.493, "lng": -0.11 },
+    "type": "Concurso"
+  },
+  {
+    "title": "Concierto de Blues",
+    "description": "Concierto de blues en el club local",
+    "date": "2024-09-25",
+    "time": "21:00",
+    "location": { "lat": 51.492, "lng": -0.08 },
+    "type": "Concierto"
+  },
+  {
+    "title": "Festival de Teatro",
+    "description": "Festival de teatro al aire libre",
+    "date": "2024-10-12",
+    "time": "17:00",
+    "location": { "lat": 51.491, "lng": -0.09 },
+    "type": "Festival"
+  },
+  {
+    "title": "Taller de Cocina",
+    "description": "Taller de cocina internacional",
+    "date": "2024-08-22",
+    "time": "11:00",
+    "location": { "lat": 51.490, "lng": -0.10 },
+    "type": "Taller"
+  },
+  {
+    "title": "Feria de Artesanías",
+    "description": "Feria con artesanías locales",
+    "date": "2024-09-05",
+    "time": "09:00",
+    "location": { "lat": 51.489, "lng": -0.11 },
+    "type": "Feria"
+  },
+  {
+    "title": "Exposición de Escultura",
+    "description": "Exposición de esculturas contemporáneas",
+    "date": "2024-10-15",
+    "time": "13:00",
+    "location": { "lat": 51.488, "lng": -0.08 },
+    "type": "Exposición"
+  },
+  {
+    "title": "Festival de Jazz",
+    "description": "Festival de jazz en el parque",
+    "date": "2024-08-18",
+    "time": "14:00",
+    "location": { "lat": 51.487, "lng": -0.09 },
+    "type": "Festival"
+  },
+  {
+    "title": "Carrera de 5K",
+    "description": "Carrera de 5 kilómetros por la ciudad",
+    "date": "2024-09-30",
+    "time": "07:00",
+    "location": { "lat": 51.486, "lng": -0.10 },
+    "type": "Deporte"
+  },
+  {
+    "title": "Concierto de Pop",
+    "description": "Concierto de música pop en el estadio",
+    "date": "2024-10-20",
+    "time": "20:00",
+    "location": { "lat": 51.485, "lng": -0.11 },
+    "type": "Concierto"
+  },
+  {
+    "title": "Conferencia de Negocios",
+    "description": "Conferencia sobre negocios internacionales",
+    "date": "2024-11-05",
+    "time": "09:00",
+    "location": { "lat": 51.484, "lng": -0.12 },
+    "type": "Conferencia"
+  },
+  {
+    "title": "Feria de Innovación",
+    "description": "Feria dedicada a las últimas innovaciones tecnológicas",
+    "date": "2024-11-15",
+    "time": "10:00",
+    "location": { "lat": 51.483, "lng": -0.13 },
+    "type": "Feria"
+  },
+  {
+    "title": "Festival de Ballet",
+    "description": "Festival de ballet clásico en el teatro municipal",
+    "date": "2024-11-25",
+    "time": "18:30",
+    "location": { "lat": 51.482, "lng": -0.14 },
+    "type": "Festival"
+  },
+  {
+    "title": "Exposición de Pintura",
+    "description": "Exposición de pinturas modernas y abstractas",
+    "date": "2024-12-05",
+    "time": "12:00",
+    "location": { "lat": 51.481, "lng": -0.15 },
+    "type": "Exposición"
+  },
+  {
+    "title": "Maratón de Montaña",
+    "description": "Maratón de montaña en los alrededores de la ciudad",
+    "date": "2024-12-10",
+    "time": "07:30",
+    "location": { "lat": 51.480, "lng": -0.16 },
+    "type": "Deporte"
+  },
+  {
+    "title": "Concierto de Ópera",
+    "description": "Concierto de ópera en el teatro principal",
+    "date": "2024-12-15",
+    "time": "19:00",
+    "location": { "lat": 51.479, "lng": -0.17 },
+    "type": "Concierto"
+  },
+  {
+    "title": "Feria de Gastronomía",
+    "description": "Feria dedicada a la gastronomía local e internacional",
+    "date": "2024-12-20",
+    "time": "11:00",
+    "location": { "lat": 51.478, "lng": -0.18 },
+    "type": "Feria"
+  },
+  {
+    "title": "Conferencia de Ciencia",
+    "description": "Conferencia sobre avances científicos y medioambientales",
+    "date": "2024-12-25",
+    "time": "14:00",
+    "location": { "lat": 51.477, "lng": -0.19 },
+    "type": "Conferencia"
+  },
+  {
+    "title": "Taller de Escritura Creativa",
+    "description": "Taller para desarrollar habilidades de escritura creativa",
+    "date": "2024-12-28",
+    "time": "16:00",
+    "location": { "lat": 51.476, "lng": -0.20 },
+    "type": "Taller"
+  },
+  {
+    "title": "Festival de Danza",
+    "description": "Festival de danza contemporánea y clásica",
+    "date": "2024-12-30",
+    "time": "15:30",
+    "location": { "lat": 51.475, "lng": -0.21 },
+    "type": "Festival"
+  },
+  {
+    "title": "Exposición de Arte Moderno",
+    "description": "Exposición de arte moderno y vanguardista",
+    "date": "2025-01-05",
+    "time": "16:30",
+    "location": { "lat": 51.474, "lng": -0.22 },
+    "type": "Exposición"
+  },
+  {
+    "title": "Festival de Cine Independiente",
+    "description": "Festival de cine independiente y experimental",
+    "date": "2025-01-10",
+    "time": "17:30",
+    "location": { "lat": 51.473, "lng": -0.23 },
+    "type": "Festival"
+  },
+  {
+    "title": "Nombre del Evento",
+    "description": "Descripción del evento...",
+    "date": "2024-07-01",
+    "time": "18:00",
+    "location": {
+        "lat": 51.505,
+        "lng": -0.09
+    },
+    "type": "Concierto",
+    "image": "ruta/a/la/imagen.jpg",
+    "externalLinks": [
+        {
+            "label": "Sitio web oficial",
+            "url": "http://www.ejemplo.com"
+        },
+        {
+            "label": "Compra de entradas",
+            "url": "http://www.ejemplo.com/entradas"
+        }
+    ]
+},
+{
+    "title": "Partido de Fútbol",
+    "description": "Partido de fútbol entre equipos locales",
+    "date": "2024-07-15",
+    "time": "20:00",
+    "location": { "lat": 40.4168, "lng": -3.7038 },
+    "type": "Fútbol",
+    "image": "images/partido-futbol.jpg"
+  },
+  {
+    "title": "Torneo de Tenis",
+    "description": "Torneo de tenis amateur en el club local",
+    "date": "2024-07-20",
+    "time": "14:00",
+    "location": { "lat": 51.5074, "lng": -0.1278 },
+    "type": "Tenis",
+    "image": "images/torneo-tenis.jpg"
+  },
+  {
+    "title": "Competencia de Natación",
+    "description": "Competencia de natación en la piscina municipal",
+    "date": "2024-08-05",
+    "time": "09:00",
+    "location": { "lat": 34.0522, "lng": -118.2437 },
+    "type": "Natación",
+    "image": "images/competencia-natacion.jpg"
+  },
+  {
+    "title": "Maratón Ciudadano",
+    "description": "Maratón anual por las calles de la ciudad",
+    "date": "2024-09-15",
+    "time": "07:30",
+    "location": { "lat": 52.5200, "lng": 13.4050 },
+    "type": "Atletismo",
+    "image": "images/maraton-ciudadano.jpg"
+  },
+  {
+    "title": "Partido de Baloncesto",
+    "description": "Partido emocionante entre equipos universitarios",
+    "date": "2024-07-25",
+    "time": "18:30",
+    "location": { "lat": 37.7749, "lng": -122.4194 },
+    "type": "Baloncesto",
+    "image": "images/partido-baloncesto.jpg"
+  }
+]
